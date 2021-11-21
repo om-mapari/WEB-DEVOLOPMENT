@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {font-family: 'Josefin Sans', sans-serif;}
+    </style>
+</head>
+
+<body>
+    <!-- 1) heading tag -->
+    <h1>Heading tag h1</h1>
+    <h2>Heading tag h2</h2>
+    <h3>Heading tag h3</h3>
+    <h4>Heading tag h4</h4>
+    <h5>Heading tag h5</h5>
+
+    <!-- 2) Paragraph tag -->
+    <p>Paragraph tag</p>
+    <hr>
+    <!-- 3) Html text formatting -->
+    <div>
+        <b>BOLD</b> <br>
+        <strong>STRONG</strong> <br>
+        <i>ITALIC</i> <br>
+        <em>EMPHASIZED TEXT</em> <br>
+        <mark>MARK</mark> <br>
+        <small>SMALL</small> <br>
+        <del>DELETE TEXT</del> <br>
+
+        SUBSCRIPT<sub>2</sub> <br>
+        SUPERSCRIPT<sup>2</sup> <br>
+    </div>
+
+    <hr>
+    <!-- 4) 
+    TAG       => JUST OPEN AND CLOSE
+    ELEMENT   => IF CONTAIN ADDED THEN THE WHOLE THING IS CALLED ELEMENT
+    ATTRIBUTE => EVERY ELEMENT HAS ATTRIBUTE -> EXTRA INFO
+    -->
+
+    <!-- 5) style -->
+    <p style="color: white; background: green;">CSS IS IN STYLE TAG</p>
+
+    <hr>
+    <!-- 6) HTML links : anker tag
+        a) target="_blank" : open in new tab
+        b) title="click to visit" : info
+    -->
+    <a href="https://www.google.com/" title="click to visit" target="_blank">go to google</a> <br>
+
+    <!-- 7) button tag -->
+    <button>
+        <a href="https://www.google.com/" title="click to visit" target="_blank">go to google</a>
+    </button>
+
+    <br>
+    <hr>
+
+    <!-- 8) Images -->
+    <img src="https://play-lh.googleusercontent.com/mbdDDuWMKrMKLOV8TgD4xqXWpt8LLLL5Amhjdxuk06OnttmbJfg7WILIw0saVBl1Wlg"
+        width="100" height="50" title="Learn Html" alt="their was learn html picture here">
+    
+    <!-- 9) HTML tables 
+        a) border 
+        b) cellspacing not supp
+        c) cellpadding not supp
+        d) callspan 
+        e) call
+    -->
+
+    <table border="1" cellspacing="1" cellpadding="10" style="text-align: center;">
+        <tr>
+            <!-- table row -->
+            <th>NAME</th> <!-- table col -->
+            <th>ROLL NO</th>
+            <th>MARKS</th>
+        </tr>
+        <tr>
+            <th>Om Mapari</th>
+            <th>33245</th>
+            <th>99</th>
+        </tr>
+        <tr>
+            <th>Rohit</th>
+            <th>33666</th>
+            <th>100</th>
+        </tr>
+    </table>
+
+    <!-- 9) HTML List 
+        *) Unordered list -> Gives Symbol
+            a) type - square, circle, dics
+
+        *) ordered list -> Gives Number
+            a) type - num(default), A, a
+            b) start - where to start
+    -->
+    <p>Unordered List</p>
+    <ul type="square">
+        <li>Laptop</li>
+        <li>Bag</li>
+        <li>Pen</li>
+        <li>Jacket</li>
+    </ul>
+    <p>Ordered List</p>
+    <ol type="a" start="5">
+        <li>Laptop</li>
+        <li>Bag</li>
+        <li>Pen</li>
+        <li>Jacket</li>
+    </ol>
+
+    
+    <hr>Form Bulding<hr>
+    <!-- forms -->
+    <!-- 
+        a) type : "password"
+        b) 
+     -->
+    <form action="">
+        <label >UserName : </label>
+        <input type="" name="username"> <br> <br>
+
+        <label >password : </label>
+        <input type="password" name="password" placeholder="placeholder"> <br> <br>
+
+        <label >Email : </label>
+        <input type="email" name="email"> <br> <br>
+
+        <select name="" id="">
+            <option value="personal">Personal</option>
+            <option value="business">business</option>
+            <option value="premium">premium</option>
+        </select> <br> <br>
+
+
+        <p>Enter About Yourself</p>
+        <textarea name="" placeholder="placeholder" id="" cols="30" rows="5"></textarea>
+        
+        <!-- use same name -->
+        <p>Select your Gender</p> <br> 
+        <input type="radio" name="Gender"> Male
+        <input type="radio" name="Gender"> Female  <br><br>
+
+        <p>Please click on checkbox</p>
+        <input type="checkbox" name=""> Yes, I read it all
+
+    </form>
+
+</body>
+
+</html>

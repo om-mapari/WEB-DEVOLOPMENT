@@ -1,0 +1,236 @@
+* {
+  margin: 0mm;
+}
+
+/*  Importent points
+1) 1cm = 37.8px
+*/
+
+/* 1) three way to use CSS
+a) External style sheet
+b) Internal style sheet
+c) Inline style sheet */
+h2 {
+  color: green;
+}
+
+/* 2) id and Class ( to access )
+a) . Class selecter => styling Group of element
+b) # id selecter => single element */
+.myclass {
+  color: rgb(255, 0, 34);
+}
+
+/* 3) CSS background Property 1:17 */
+.backimg {
+  width: 100%; /* all on screen */
+  height: 100vh; /* all screen */
+
+  /* background-color: gray; */
+  background-image: url("https://www.blog.duomly.com/wp-content/uploads/2020/05/css-background-image-compressor.png");
+
+  background-repeat: no-repeat; /* no repeat when zoom out */
+  /* background-repeat: repeat-y ;  repeat when zoom out in horizentolly */
+
+  /* background-attachment: fixed;  */ /* 4) parallex website */
+}
+
+/* 4) Fonts in CSS 
+  1) Add link in html head
+  2) Add Css rules to specify families
+    in id given
+*/
+#fonts {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-variant: small-caps; /*Capital word same, small word -> small sized captital*/
+  font-style: italic;
+  font-size: 2em; /* 1em = 16px */
+  font-weight: bolder; /* How to write */
+}
+
+/* 5) Text in CSS */
+#text {
+  font-family: "Courier New", Courier, monospace;
+  color: red;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  direction: ltr; /* rtl -> start from right side */
+  text-indent: 50px; /* paragraph starting weith 50px */
+  text-align: center; /* come in center */
+  text-transform: lowercase;
+}
+
+/* 5) Link in CSS */
+a:link {
+  color: red;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: yellow;
+}
+a:active {
+  color: blue;
+}
+
+/* 7) Border */
+.border {
+  widows: 50px;
+  height: 50px;
+  background-color: aqua;
+
+  /* border-width: 5px;
+    border-color: black;
+    border-style: dotted; */
+  /* or use this */
+
+  border: 5px black dotted;
+}
+
+/* 8) List and Ordered List */
+ul {
+  list-style: circle;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
+
+/* 9) Box Model CSS
+a) Content - Inside everything below 
+b) Padding - below border
+c) Border - border is in between padding and margin
+d) Margin - above border
+*/
+.boxmodel {
+  width: 500px;
+  height: 100px;
+  background-color: cadetblue;
+  /* padding-top: 50px; */
+  /* or use this padding: top right bottom left;  */
+  padding: 50px 50px 50px 50px;
+}
+
+input {
+  padding-left: 10px; /* padding only for input box */
+  margin-left: 100px;
+}
+
+/* 10) scrollbar Bar 
+a) Hidden
+b) Scroll
+c) Auto
+*/
+.scrollbar {
+  width: 200px;
+  height: 100px;
+  background-color: gray;
+  border: 3px solid yellow;
+
+  overflow: scroll;
+}
+
+/* 11) Position in CSS
+a) Releative 
+b) Absolute 
+*/
+.father {
+  width: 500px;
+  height: 100px;
+  background-color: cadetblue;
+  position: relative;
+}
+/* child takes position releative to father */
+.child1 {
+  width: 50px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+}
+.child2 {
+  width: 50px;
+  height: 20px;
+  background-color: green;
+  position: absolute;
+  right: 0;
+}
+.child3 {
+  width: 50px;
+  height: 20px;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+}
+.child4 {
+  width: 50px;
+  height: 20px;
+  background-color: orange;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* 11) Z-index -> view on top 
+*/
+.zindex {
+  width: 500px;
+  height: 100px;
+  background-color: cadetblue;
+  position: relative;
+}
+.ele1 {
+  width: 50px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+}
+.ele2 {
+  width: 50px;
+  height: 20px;
+  background-color: green;
+  position: absolute;
+}
+.ele3 {
+  width: 50px;
+  height: 20px;
+  background-color: blue;
+  position: absolute;
+  z-index: 1;
+}
+
+/* 12) float -> show in same block
+*/
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+
+.logo {
+  width: 30%;
+  line-height: 80px;
+  text-align: center;
+  background-color: orange;
+
+  float: left;
+}
+.menu {
+  width: 70%;
+  line-height: 80px;
+  background-color: red;
+
+  float: right; /* in same header display to right */
+}
+#a {
+  list-style: none;
+  text-align: right;
+}
+#b {
+  display: inline;
+  padding: 0px 10px;
+  border: 1px solid black;
+}
+
+/* 12) cursor */
