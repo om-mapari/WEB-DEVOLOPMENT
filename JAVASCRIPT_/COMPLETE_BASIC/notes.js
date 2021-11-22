@@ -11,14 +11,17 @@
 // var str = "sum";
 // var result = true;
 // console.log(str + " = " + num1 + num1 + " is "+ result);
+// console.log(typeof num1);
 
 // //? Objects
-// var marks = {
-//     ravi: 34,
-//     shivam: 88,
-//     harry: 99
+// var animal = {
+//     name: "cow ",
+//     legs: 4,
+//     eyes: 2
 // }
-// console.log(marks);
+// console.log(animal);
+// console.log(animal.name);
+// console.log(animal["name"]);
 
 // //? undefined variable
 // var und; 
@@ -28,20 +31,27 @@
 // var nu = null;
 // console.log(nu);
 
+
 //* 3) var vs Let vs const
 //?           Scope              overwrite           redeclare
 //? var       function Scoped    can   be overwrite  can be redeclare
 //? let       Block Scoped       can   be overwrite  cant be redeclare
-//? const     Black Scoped       can't be overwrite  cant be redeclare
+//? const     Block Scoped       can't be overwrite  cant be redeclare
 
 //? Tips
 //? Never use var
-//? Always Use let
+//? Always Use let and imagine it as cpp normal variables
 //? use const when you dont need to overwrite value
 
-//* 4) TWO TYPES OF DATATYPE
+//* 4) TWO TYPES OF DATATYPE 
 //? Primitive data types : undefined, null, number, string, boolean, symbol
 //? Reference data types : Arrays and Objects
+
+//* 5) Typecasting
+// var a=5,b="4"
+// console.log(a+b);
+// b = Number(b)
+// console.log(a+b);
 
 //* 5) Conditional-> Same as c++
 // var age = 15;
@@ -62,13 +72,17 @@ var arr = [1,2,"bablu",4,true];
 // console.log(arr)
 // console.log(arr[0])
 // console.log(arr[4])
-// for (var i = 0; i < arr.length; i++) {
+// for (let i = 0; i < arr.length; i++) {
 //     console.log(arr[i]);
 // }
-// //? For Each loop
-// arr.forEach(function(element){
-//     console.log(element);
+
+//? For Each loop : fre
+// arr.forEach(function(i){
+//     console.log(i);
 // })
+// arr.forEach(i => {
+//     console.log(i);
+// });
 
 //? While loop 
 // let j = 5
@@ -111,27 +125,27 @@ var arr = [1,2,"bablu",4,true];
 //* 11) Dom manupliation
 
 //* a) getElementBy Id and ClassName
-let elem = document.getElementById('click')
-console.log(elem);
+// let elem = document.getElementById('click')
+// console.log(elem);
 
-let eleclass = document.getElementsByClassName('container') // gebc
-console.log(eleclass);
+// let eleclass = document.getElementsByClassName('container') // gebc
+// console.log(eleclass);
 
-eleclass[0].style.background = "pink"; // add css
-eleclass[0].classList.add("para-text") // add css class
-eleclass[1].classList.add("classbyjs") 
+// eleclass[0].style.background = "pink"; // add css
+// eleclass[0].classList.add("para-text") // add css class
+// eleclass[1].classList.add("classbyjs") 
 
-console.clear();
+// console.clear();
 // console.log(elem.innerHTML);
 // console.log(eleclass[1].innerText);
 
 //* b) find element by tag name
-// tn = document.getElementsByTagName('button')
-tn = document.getElementsByTagName('div')
-console.log(tn);
+// tn1 = document.getElementsByTagName('button')
+// tn = document.getElementsByTagName('div')
+// console.log(tn);
 
 //* c) create ele and append
-createdElement = document.createElement('p')
-createdElement.innerText = "This para element created by JS"
-tn[0].appendChild(createdElement); // first div append child
+// createdElement = document.createElement('p')
+// createdElement.innerText = "This para element created by JS"
+// tn[0].appendChild(createdElement); // first div append child
 
