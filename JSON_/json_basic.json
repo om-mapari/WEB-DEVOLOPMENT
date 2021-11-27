@@ -1,0 +1,11 @@
+{
+    "name": "OM",
+    "score": 11.75,
+    "isAdmin": false,
+    "license": null,
+    "ShopItem": ["food", "clothes", "sunflower"],
+    "myObj": {
+        "name": "nested",
+        "marks": 45
+    }
+}
