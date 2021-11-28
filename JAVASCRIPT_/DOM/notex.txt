@@ -1,0 +1,14 @@
+// WINDOW
+// windows.console.log("hellow window")
+console.log(window);
+console.log("Hello world");
+window.console.log("Hello World")
+
+// ROOT NODES
+console.log(document.documentElement)
+console.log(document.body);
+console.log(document.head);
+
+// CHILD NODES
+console.log(document.body.childNodes);
+console.log(document.body.children);
