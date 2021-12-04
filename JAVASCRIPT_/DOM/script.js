@@ -8,7 +8,7 @@
 // //* 2) get element by id and Class
 // const divEle = document.getElementById("div-id")
 // console.log(divEle); // print Ele
-// divEle.style.color = "red" 
+// divEle.style.color = "red"
 
 // const divWithClass = document.getElementsByClassName("div-class")
 // console.log(divWithClass); // Array of element
@@ -20,11 +20,10 @@
 //     element.style.color = "green"
 // });
 
-// //? Direct 
+// //? Direct
 // Array.from(divWithClass).forEach(currentItem => {
 //     currentItem.style.color = "red"
 // });
-
 
 // //* Selet element QuerySelector ( CSS )
 // const dataAttributeElement = document.querySelector('[data-test]') // to select one ele
@@ -37,12 +36,40 @@
 // const input = document.querySelector("input")
 // // console.log(input);
 
-// //* Event Listener 
-const btn = document.getElementById('btn1')
-//? add => btn.addeventListener('event',function)
-function clicked() {
-    console.log('clicked');
-}
-btn.addEventListener('click',clicked)
-//? remove => 
-// btn.removeEventListener('click',clicked)
+// //* Event Listener
+// const btn = document.getElementById("btn1");
+// //? add => btn.addeventListener('event',function)
+// function clicked() {
+//     console.log("clicked");
+// }
+
+// btn.addEventListener("click", clicked);
+// //? remove =>
+// // btn.removeEventListener('click',clicked)
+
+// const input = document.getElementById("text");
+// input.addEventListener("change", () => {
+//     console.log("changed");
+// });
+
+// input.addEventListener("input", e => {
+//     console.log(e.target.value === "");
+// });
+
+
+// //* Event Listener preventing defult
+// const form = document.querySelector('[data-form]')
+// console.log(form);
+// form.addEventListener("submit",e =>{
+//     e.preventDefault() // prevint the default work i.e submitting form
+//     console.log("submitted form");
+// })
+
+// const link = document.querySelector('[data-link]')
+// link.addEventListener("click",e => {
+//     e.preventDefault() // privent click
+//     console.log("privented Default"); 
+// })
+
+//* Resize event
+// window.addEventListener("resize",()=> console.log("resize"))
