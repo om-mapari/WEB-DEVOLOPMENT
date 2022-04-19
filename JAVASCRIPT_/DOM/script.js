@@ -5,7 +5,7 @@
 // element.innerText = "Append At last"
 // document.body.appendChild(element)
 
-// //* 2) get element by id and Class
+//* 2) get element by id and Class
 // const divEle = document.getElementById("div-id")
 // console.log(divEle); // print Ele
 // divEle.style.color = "red"
