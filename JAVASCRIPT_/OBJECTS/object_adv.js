@@ -1,19 +1,19 @@
 //* 1) function inside object
-// const course = {
-//     leacture : 10,
-//     section : 3,
-//     title : 'javascript',
-//     notes : {
-//         intro : 'welcome',
-//         chap1 : 'data-types'
-//     },
-//     enroll(){
-//         console.log("you are enrolled");
-//     }
-// }
+const course = {
+    leacture : 10,
+    section : 3,
+    title : 'javascript',
+    notes : {
+        intro : 'welcome',
+        chap1 : 'data-types'
+    },
+    enroll(){
+        console.log("you are enrolled");
+    }
+}
 
-// course.enroll()
-// console.log(course);
+course.enroll()
+console.log(course);
 
 
 //* 2) factory function : for multiple course creation 

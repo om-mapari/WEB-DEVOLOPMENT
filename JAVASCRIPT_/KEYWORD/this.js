@@ -1,24 +1,18 @@
-// let laptop = {
-//     cpu : 'i5',
-//     ram : 16,
-//     brand : "hp",
-//     getConfig: function(){
-//         console.log(cpu);  // gives error
-//     }
-// }
 
 let laptop = {
     cpu : 'i5',
     ram : 16,
     brand : "hp",
     getConfig: function(){
+        // console.log(cpu);  // gives error
         console.log(this.cpu); // this refer to current object property 
+        // console.log(laptop.cpu); // same as 
     }
 }
-
 laptop.getConfig()
 
 
+// Example 
 let student1 = {
     name : 'om',
     marks : 88,
@@ -37,3 +31,4 @@ let student2 = {
 }
 student1.compareMarks(student2)
 student2.compareMarks(student1)
+
