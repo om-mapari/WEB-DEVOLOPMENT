@@ -10,16 +10,20 @@ ___
 >Window is an Object
 ```javascript
 console.log(window);
-console.log("Hello world");
-window.console.log("Hello World")
+
+Both are same : as window is globle object
+alart("Hello world");
+window.alart("Hello World")
 ```
 >Document Object is HTML page
 ```
               html = root node
               /              \
             head            body
+            /              /    \
+          title           h1      p
             
-            document obj
+              *document obj*
 ```
   
 
