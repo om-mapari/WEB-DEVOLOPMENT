@@ -74,15 +74,9 @@
 // const avg2 = avg(3,5);
 // console.log(avg1,avg2);
 
-<<<<<<< HEAD
 //* 8) Arrays and Loop
 // //? For loop
 var arr = [1,2,"bablu",4,true];
-=======
-//* 7) Arrays and Loop
-//? For loop
-// const arr = [1,2,"bablu",4,true];
->>>>>>> day-7
 // console.log(arr)
 // console.log(arr[0])
 // console.log(arr[4])
@@ -105,83 +99,3 @@ var arr = [1,2,"bablu",4,true];
 //     console.log(j);
 //     j--;
 // }
-
-<<<<<<< HEAD
-=======
-//* 8) Arrays Methods
-// let arr = ["hi","hello",43,null,true]
-// console.log(arr.length);
-
-// arr.push("push");
-// console.log(arr);
-
-// arr.pop(); 
-// console.log(arr);
-
-// // push front
-// arr.unshift("unshift"); 
-// console.log(arr); 
-
-// // pop front
-// arr.shift();  
-// console.log(arr);
-
-// arr.sort(); 
-// console.log(arr);
-
-
-//* 9) String Methods
-// let str = "Hello i am good boy am"
-// console.log(str.length);
-// console.log(str.indexOf("am")); // return first occ of string in str
-// console.log(str.lastIndexOf("am")); // return last occ of string in str
-// console.log(str.slice(1,5));
-// console.log(str.replace("good","bad")); // replace first occ only
-
-//* 10) Dates
-// let mydate = new Date();
-// console.log(mydate.getTime());
-// console.log(mydate.getDay());
-// console.log(mydate.getFullYear());
-// console.log(mydate.getHours()-12);
-// console.log(mydate.getMinutes());
-// console.log(mydate.getSeconds());
-
-//* 11) Dom manupliation
-
-//* a) getElementBy Id and ClassName
-// let elem = document.getElementById('click')
-// console.log(elem);
-
-// let eleclass = document.getElementsByClassName('container') // gebc
-// console.log(eleclass);
-
-// eleclass[0].style.background = "pink"; // add css
-// eleclass[0].classList.add("para-text") // add css class
-// eleclass[1].classList.add("classbyjs") 
-
-// console.clear();
-// console.log(elem.innerHTML);
-// console.log(eleclass[1].innerText);
-
-//* b) find element by tag name
-// tn1 = document.getElementsByTagName('button')
-// tn = document.getElementsByTagName('div')
-// console.log(tn);
-
-//* c) create ele and append
-// createdElement = document.createElement('p')
-// createdElement.innerText = "This para element created by JS"
-// tn[0].appendChild(createdElement); // first div append child
-
-
-//* 12) Default parameter
-// function add(num1,num2,num3=1)
-// {
-//     console.log(num1,num2,num3);
-//     return num1+num2+num3;
-// }
-
-// result = add(4,5);
-// console.log(result);
->>>>>>> day-7

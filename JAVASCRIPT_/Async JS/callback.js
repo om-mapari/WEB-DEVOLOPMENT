@@ -1,18 +1,16 @@
-// let data = new Promise((resolve,reject)=>{
-//     setTimeout(() => { // complex code
-//         resolve({
-//             'name' : 'om',
-//             'rool no ' : 33245
-//         })
-//     },2000);
-// })
+let data = new Promise((resolve,reject)=>{
+    setTimeout(() => { // complex code
+        resolve({
+            'name' : 'om',
+            'rool no ' : 33245
+        })
+    },2000);
+})
 
 
-// data.then((x)=>{
-//     console.log(x);
-// })
-
-// console.log('how');
+data.then((x)=>{
+    console.log(x);
+})
 
 
 
@@ -69,10 +67,10 @@
 // })
 
 
-const fetch = require('node-fetch')
+// const fetch = require('node-fetch')
 
-async function hello(){
-    console.log(await (await fetch("https://dog.ceo/api/breeds/image/random")).json());
-}
+// async function hello(){
+//     console.log(await (await fetch("https://dog.ceo/api/breeds/image/random")).json());
+// }
 
-hello();
+// hello();
