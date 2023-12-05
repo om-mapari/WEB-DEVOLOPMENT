@@ -2,8 +2,7 @@
 # These are the Notes that i created to 
 # for learning web devolopemnt 
 
-"""python
-
+```
 
 
 from base_class import TaggingInterface
@@ -48,4 +47,4 @@ class StepFunctionTagger(TaggingInterface):
             }
             self.boto_call('untag_resource', boto_params)
 
-"""
+```
