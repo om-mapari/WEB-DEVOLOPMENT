@@ -1,3 +1,5 @@
+```
+
 import json
 import boto3
 
@@ -31,3 +33,4 @@ fetched_parameters = fetch_ssm_parameters(prefix)
 # Save the fetched parameters as a JSON file
 save_ssm_parameters_as_json(fetched_parameters)
 
+```
