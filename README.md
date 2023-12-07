@@ -1,36 +1,41 @@
 ```
 
-import json
 import boto3
 
-def fetch_ssm_parameters(prefix):
-    # Create an SSM client
-    ssm_client = boto3.client('ssm')
+def fetch_all_lambda_arns():
+    # Create a Lambda client
+    lambda_client = boto3.client('lambda')
 
-    # Use the `get_parameters_by_path` method to fetch parameters by a specified path (prefix)
-    response = ssm_client.get_parameters_by_path(
-        Path=prefix,
-        Recursive=True,
-        WithDecryption=True  # To decrypt secure string parameters
-    )
+    # List all Lambda functions
+    response = lambda_client.list_functions()
 
-    # Extract parameter names and values from the response
-    parameters = {}
-    for param in response['Parameters']:
-        parameters[param['Name']] = param['Value']
+    # Extract Lambda ARNs from the response
+    lambda_arns = [function['FunctionArn'] for function in response['Functions']]
 
-    return parameters
+    return lambda_arns
 
-def save_ssm_parameters_as_json(parameters):
-    # Save the parameters as a JSON file
-    with open('ssm_parameters.json', 'w') as file:
-        json.dump(parameters, file, indent=4)
+def filter_lambdas_by_tag(tag_key):
+    # List to store Lambda ARNs with the specified tag
+    lambdas_with_tag = []
 
-# Replace 'YOUR_PREFIX' with your desired prefix
-prefix = '/your-prefix/'
-fetched_parameters = fetch_ssm_parameters(prefix)
+    # Get all Lambda ARNs
+    all_lambda_arns = fetch_all_lambda_arns()
 
-# Save the fetched parameters as a JSON file
-save_ssm_parameters_as_json(fetched_parameters)
+    # Create a Lambda client
+    lambda_client = boto3.client('lambda')
+
+    # Iterate through each Lambda ARN and check for the specified tag
+    for arn in all_lambda_arns:
+        response = lambda_client.list_tags(Resource=arn)
+        if tag_key in response.get('Tags', {}):
+            lambdas_with_tag.append(arn)
+
+    return lambdas_with_tag
+
+# Replace 'YOUR_TAG_KEY' with the specific tag key you want to check for
+tag_key = 'your-tag-key'
+lambdas_with_specified_tag = filter_lambdas_by_tag(tag_key)
+
+print(lambdas_with_specified_tag)
 
 ```
